@@ -1,2 +1,2 @@
-# RandomTP
-Plugin for randomly teleporting players.
+# BananaFun
+Makes servers great again.
