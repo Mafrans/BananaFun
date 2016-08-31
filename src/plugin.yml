@@ -1,0 +1,34 @@
+name: BananaFun
+version: 1.0
+description: A plugin to make servers more fun.
+author: Mafrans
+main: me.mafrans.bananafun.BananaFun
+
+commands:
+  slapfish:
+    permission: bananafun.slapfish
+  instabow:
+    permission: bananafun.instabow
+  bouncer:
+    permission: bananafun.bouncer
+  woolbow:
+    permission: bananafun.woolbow
+  enderdragon:
+    permission: bananafun.enderdragon
+  slimerain:
+    permission: bananafun.events.slimerain
+
+permissions:
+  bananafun.slapfish:
+    default: op
+  bananafun.instabow:
+    default: op
+  bananafun.bouncer:
+    default: op
+  bananafun.woolbow:
+    default: op
+  bananafun.enderdragon:
+    default: op
+  bananafun.events.slimerain:
+    default: op
+  
