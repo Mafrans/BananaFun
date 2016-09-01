@@ -12,7 +12,7 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import me.mafrans.bananafun.items.Bouncer;
+import me.mafrans.bananafun.items.Megaphone;
 import static org.bukkit.Bukkit.getPlayer;
 
 public class Command_megaphone implements CommandExecutor
@@ -34,8 +34,8 @@ public class Command_megaphone implements CommandExecutor
                 return false;
             }
 
-            sender.sendMessage(ChatColor.YELLOW + "Recieved item: " + Bouncer.metadata.getDisplayName());
-            ((Player) sender).getInventory().addItem(Bouncer.item);
+            sender.sendMessage(ChatColor.YELLOW + "Recieved item: " + Megaphone.metadata.getDisplayName());
+            ((Player) sender).getInventory().addItem(Megaphone.item);
 
             return true;
         }
@@ -53,8 +53,8 @@ public class Command_megaphone implements CommandExecutor
                 sender.sendMessage(ChatColor.YELLOW + "Could not find player: " + ChatColor.GREEN + args[1]);
                 return true;
             }
-            sender.sendMessage(ChatColor.YELLOW + "Gave item: " + Bouncer.metadata.getDisplayName() + ChatColor.YELLOW + " to player: " + ChatColor.GREEN + args[1]);
-            player.getInventory().addItem(Bouncer.item);
+            sender.sendMessage(ChatColor.YELLOW + "Gave item: " + Megaphone.metadata.getDisplayName() + ChatColor.YELLOW + " to player: " + ChatColor.GREEN + args[1]);
+            player.getInventory().addItem(Megaphone.item);
 
             return true;
         }

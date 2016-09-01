@@ -15,8 +15,11 @@ commands:
     permission: bananafun.woolbow
   enderdragon:
     permission: bananafun.enderdragon
-  slimerain:
-    permission: bananafun.events.slimerain
+  dynamite:
+    permission: bananafun.dynamite
+  megaphone:
+    permission: bananafun.megaphone
+  
 
 permissions:
   bananafun.slapfish:
@@ -29,6 +32,8 @@ permissions:
     default: op
   bananafun.enderdragon:
     default: op
-  bananafun.events.slimerain:
+  bananafun.dynamite:
+    default: op
+  bananafun.megaphone:
     default: op
   

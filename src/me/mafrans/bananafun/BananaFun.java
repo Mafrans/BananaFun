@@ -9,12 +9,14 @@ import me.mafrans.bananafun.commands.Command_bouncer;
 import me.mafrans.bananafun.commands.Command_dynamite;
 import me.mafrans.bananafun.commands.Command_enderdragon;
 import me.mafrans.bananafun.commands.Command_instabow;
+import me.mafrans.bananafun.commands.Command_megaphone;
 import me.mafrans.bananafun.commands.Command_slapfish;
 import me.mafrans.bananafun.commands.Command_woolbow;
 import me.mafrans.bananafun.items.Bouncer;
 import me.mafrans.bananafun.items.Dynamite;
 import me.mafrans.bananafun.items.Enderdragon;
 import me.mafrans.bananafun.items.Instabow;
+import me.mafrans.bananafun.items.Megaphone;
 import me.mafrans.bananafun.items.Slapfish;
 import me.mafrans.bananafun.items.Woolbow;
 import me.mafrans.bananafun.listeners.BlockListener;
@@ -46,6 +48,7 @@ public class BananaFun extends JavaPlugin implements Listener
         Woolbow.registerItem();
         Enderdragon.registerItem();
         Dynamite.registerItem();
+        Megaphone.registerItem();
 
         // Register the listeners
         getServer().getPluginManager().registerEvents(playerlistener, plugin);
@@ -58,6 +61,7 @@ public class BananaFun extends JavaPlugin implements Listener
         plugin.getCommand("woolbow").setExecutor(new Command_woolbow());
         plugin.getCommand("enderdragon").setExecutor(new Command_enderdragon());
         plugin.getCommand("dynamite").setExecutor(new Command_dynamite());
+        plugin.getCommand("megaphone").setExecutor(new Command_megaphone());
     }
 }
 

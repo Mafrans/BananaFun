@@ -57,7 +57,10 @@ public class PlayerListener implements Listener
                 {
                     Dynamite.itemInteract(player, e);
                 }
-                
+            }
+            
+            case RED_MUSHROOM:
+            {
                 if(hand.getItemMeta().equals(Megaphone.metadata))
                 {
                     Megaphone.itemInteract(player, e);

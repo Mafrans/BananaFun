@@ -16,7 +16,7 @@ import org.bukkit.material.MaterialData;
 
 public class Megaphone
 {
-    public static ItemStack    item     = new ItemStack(Material.BRICK);
+    public static ItemStack    item     = new ItemStack(Material.RED_MUSHROOM);
     public static ItemMeta     metadata = item.getItemMeta();
     public static MaterialData itemdata = item.getData();
 
@@ -24,15 +24,16 @@ public class Megaphone
     {
         if(event.getAction().equals(Action.RIGHT_CLICK_AIR))
         {
-            user.playNote(user.getLocation(), Instrument.PIANO, Note.sharp(1, Note.Tone.C));
-            user.playNote(user.getLocation(), Instrument.PIANO, Note.sharp(1, Note.Tone.E));
-            user.playNote(user.getLocation(), Instrument.PIANO, Note.sharp(1, Note.Tone.G));
+            user.playNote(user.getLocation(), Instrument.PIANO, Note.natural(1, Note.Tone.C));
+            user.playNote(user.getLocation(), Instrument.PIANO, Note.natural(1, Note.Tone.E));
+            user.playNote(user.getLocation(), Instrument.PIANO, Note.natural(1, Note.Tone.G));
 
             for(Entity entity : user.getNearbyEntities(25,15,25))
             {
                 entity.setVelocity(user.getLocation().getDirection().multiply(3));
             }
         }
+        event.setCancelled(true);
     }
 
     public static void registerItem()
