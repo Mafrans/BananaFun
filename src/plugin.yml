@@ -19,6 +19,8 @@ commands:
     permission: bananafun.dynamite
   megaphone:
     permission: bananafun.megaphone
+  magnet:
+    permission: bananafun.magnet
   
 
 permissions:
@@ -35,5 +37,7 @@ permissions:
   bananafun.dynamite:
     default: op
   bananafun.megaphone:
+    default: op
+  bananafun.magnet:
     default: op
   

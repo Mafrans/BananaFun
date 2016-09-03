@@ -66,6 +66,14 @@ public class PlayerListener implements Listener
                     Megaphone.itemInteract(player, e);
                 }
             }
+            
+            case IRON_INGOT:
+            {
+                if(hand.getItemMeta().getDisplayName().equals(Magnet.metadata.getDisplayName()))
+                {
+                    Magnet.itemInteract(player, e);
+                }
+            }
         }
     }
 
@@ -77,6 +85,11 @@ public class PlayerListener implements Listener
         if(Enderdragon.players.contains(player))
         {
             Enderdragon.dragonEffect(player, e);
+        }
+        
+        if(Magnet.players.contains(player))
+        {
+            Magnet.itemMove(player, e);
         }
     }
 }
